@@ -1,0 +1,6 @@
+SELECT SUM (population)
+FROM population_years
+JOIN countries 
+ON population_years.country_id = countries.id
+WHERE continent = 'Oceania'
+AND year = '2005';
